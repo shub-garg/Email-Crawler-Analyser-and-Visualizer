@@ -21,6 +21,21 @@ You should install the SQLite browser to view and modify the databases from:
 
 http://sqlitebrowser.org/
 
+<h4> Python Packages : </h4>
+
+<h5>How to install a package :</h5>
+
+    pip install <packagename>
+    
+<h5> How to upgrade :</h5>
+
+    pip --upgrade <packagename>
+   
+<h5> Packages required : </h5>
+Please install/upgrade the following python packages :
+
+    [urllib, re, sqlite3, ssl, time, zlib, string]
+
 The first step is to spider the gmane repository.  The base URL 
 is hard-coded in the gmane.py and is hard-coded to the Sakai
 developer list.  You can spider another repository by changing that
@@ -67,11 +82,6 @@ content.sqlite, you can run gmane.py again to get new messages as they get sent 
 list.  gmane.py will quickly scan to the end of the already-spidered pages and check 
 if there are new messages and then quickly retrieve those messages and add them 
 to content.sqlite.
-
-The content.sqlite data is pretty raw, with an innefficient data model, and not compressed.
-This is intentional as it allows you to look at content.sqlite to debug the process.
-It would be a bad idea to run any queries against this database as they would be 
-slow.
 
 The second process is running the program gmodel.py.  gmodel.py reads the rough/raw 
 data from content.sqlite and produces a cleaned-up and well-modeled version of the 
