@@ -30,7 +30,7 @@ http://sqlitebrowser.org/
     
 <h5> How to upgrade :</h5>
 
-    pip --upgrade <packagename>
+    pip install --upgrade <packagename>
    
 <h5> Packages required : </h5>
 Please install/upgrade the following python packages :
