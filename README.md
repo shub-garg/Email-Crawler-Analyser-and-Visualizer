@@ -1,5 +1,6 @@
-Analyzing an EMAIL Archive from gmane and vizualizing the data
-using the D3 JavaScript library
+<h1>Analyzing an EMAIL Archive from gmane and vizualizing the data using the D3 JavaScript library</h1>
+
+<h3> Discription </h3>
 
 This is a set of tools that allow you to pull down an archive
 of a gmane repository using the instructions at:
@@ -13,6 +14,8 @@ http://mbox.dr-chuck.net/
 
 This server will be faster and take a lot of load off the 
 gmane.org server.
+
+<h3>Requirements : </h3>
 
 You should install the SQLite browser to view and modify the databases from:
 
@@ -29,6 +32,7 @@ its data in a database and can be interrupted and re-started
 as often as needed.   It may take many hours to pull all the data
 down.  So you may need to restart several times.
 
+<h3> Resources : </h3>
 To give you a head-start, you may dowload 600MB of pre-spidered Sakai 
 email here:
 
@@ -36,16 +40,6 @@ https://www.py4e.com/data_space/content.sqlite.zip
 
 If you download this, you can "catch up with the latest" by
 running gmane.py.
-
-Navigate to the folder where you extracted the gmane.zip
-
-Note: Windows has difficulty in displaying UTF-8 characters
-in the console so for each console window you open, you may need
-to type the following command before running this code:
-
-    chcp 65001
-
-http://stackoverflow.com/questions/388490/unicode-characters-in-windows-command-line-how
 
 Here is a run of gmane.py getting the last five messages of the
 sakai developer list:
@@ -90,14 +84,7 @@ Running gmodel.py works as follows:
 Mac: python3 gmodel.py
 Win: gmodel.py
 
-Loaded allsenders 1588 and mapping 28 dns mapping 1
-1 2005-12-08T23:34:30-06:00 ggolden22@mac.com
-251 2005-12-22T10:03:20-08:00 tpamsler@ucdavis.edu
-501 2006-01-12T11:17:34-05:00 lance@indiana.edu
-751 2006-01-24T11:13:28-08:00 vrajgopalan@ucmerced.edu
-...
-
-The gmodel.py program does a number of data cleaing steps
+<h5>The gmodel.py program does a number of data cleaing steps</h5>
 
 Domain names are truncated to two levels for .com, .org, .edu, and .net 
 other domain names are truncated to three levels.  So si.umich.edu becomes
@@ -132,7 +119,7 @@ mapping:
 
 iupui.edu -> indiana.edu
 
-So all the folks from the various Indiana University campuses are tracked together
+So all the folks from the various Indiana University campuses are tracked together.
 
 You can re-run the gmodel.py over and over as you look at the data, and add mappings
 to make the data cleaner and cleaner.   When you are done, you will have a nicely
@@ -148,23 +135,11 @@ Win: gbasic.py
 How many to dump? 5
 Loaded messages= 51330 subjects= 25033 senders= 1584
 
-Top 5 Email list participants
-steve.swinsburg@gmail.com 2657
-azeckoski@unicon.net 1742
-ieb@tfd.co.uk 1591
-csev@umich.edu 1304
-david.horwitz@uct.ac.za 1184
-
-Top 5 Email list organizations
-gmail.com 7339
-umich.edu 6243
-uct.ac.za 2451
-indiana.edu 2258
-unicon.net 2055
-
 You can look at the data in index.sqlite and if you find a problem, you 
 can update the Mapping table and DNSMapping table in content.sqlite and
 re-run gmodel.py.
+
+<h3> Visualisation : </h3>
 
 There is a simple vizualization of the word frequence in the subject lines
 in the file gword.py:
@@ -192,4 +167,7 @@ Output written to gline.js
 
 Its output is written to gline.js which is visualized using gline.htm.
 
+![](https://github.com/shub-garg/Email-Crawler-Analyser-and-Visualizer/blob/main/Code/Images/gline.PNG)
+
 As always - comments welcome.
+<h2>Thank you!!</h2>
