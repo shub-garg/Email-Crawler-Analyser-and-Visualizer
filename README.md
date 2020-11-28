@@ -44,11 +44,11 @@ running gmane.py.
 Here is a run of gmane.py getting the last five messages of the
 sakai developer list:
 
-<font color="green">
-Mac: python3 gmane.py 
 
-Win: gmane.py 
-</font>
+    Mac: python3 gmane.py 
+
+    Win:python gmane.py 
+
 
 The program scans content.sqlite from 1 up to the first message number not
 already spidered and starts spidering at that message.  It continues spidering
@@ -84,11 +84,11 @@ data cleaning process.
 
 Running gmodel.py works as follows:
 
-Mac: python3 gmodel.py
+    Mac: python3 gmodel.py
 
-Win: gmodel.py
+    Win:python gmodel.py
 
-<h5>The gmodel.py program does a number of data cleaing steps</h5>
+<h4>The gmodel.py program does a number of data cleaing steps</h4>
 
 Domain names are truncated to two levels for .com, .org, .edu, and .net 
 other domain names are truncated to three levels.  So si.umich.edu becomes
@@ -133,9 +133,9 @@ analysis.   With this file, data analysis will be really quick.
 The first, simplest data analysis is to do a "who does the most" and "which 
 organzation does the most"?  This is done using gbasic.py:
 
-Mac: python3 gbasic.py
+    Mac: python3 gbasic.py
 
-Win: gbasic.py 
+    Win:python gbasic.py 
 
 How many to dump? 5
 Loaded messages= 51330 subjects= 25033 senders= 1584
@@ -149,9 +149,9 @@ re-run gmodel.py.
 There is a simple vizualization of the word frequence in the subject lines
 in the file gword.py:
 
-Mac: python3 gword.py
+    Mac: python3 gword.py
 
-Win: gword.py
+    Win:python gword.py
 
 Range of counts: 33229 129
 Output written to gword.js
@@ -163,9 +163,9 @@ gword.htm.
 A second visualization is in gline.py.  It visualizes email participation by 
 organizations over time.
 
-Mac: python3 gline.py 
+    Mac: python3 gline.py 
 
-Win: gline.py 
+    Win:python gline.py 
 
 Loaded messages= 51330 subjects= 25033 senders= 1584
 Top 10 Oranizations
