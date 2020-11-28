@@ -29,7 +29,7 @@ its data in a database and can be interrupted and re-started
 as often as needed.   It may take many hours to pull all the data
 down.  So you may need to restart several times.
 
-To give you a head-start, I have put up 600MB of pre-spidered Sakai 
+To give you a head-start, you may dowload 600MB of pre-spidered Sakai 
 email here:
 
 https://www.py4e.com/data_space/content.sqlite.zip
@@ -52,19 +52,6 @@ sakai developer list:
 
 Mac: python3 gmane.py 
 Win: gmane.py 
-
-How many messages:10
-http://mbox.dr-chuck.net/sakai.devel/1/2 2662
-    ggolden@umich.edu 2005-12-08T23:34:30-06:00 call for participation: developers documentation
-http://mbox.dr-chuck.net/sakai.devel/2/3 2434
-    csev@umich.edu 2005-12-09T00:58:01-05:00 report from the austin conference:  sakai developers break into song
-http://mbox.dr-chuck.net/sakai.devel/3/4 3055
-    kevin.carpenter@rsmart.com 2005-12-09T09:01:49-07:00 cas and sakai 1.5
-http://mbox.dr-chuck.net/sakai.devel/4/5 11721
-    michael.feldstein@suny.edu 2005-12-09T09:43:12-05:00 re: lms/vle rants/comments
-http://mbox.dr-chuck.net/sakai.devel/5/6 9443
-    john@caret.cam.ac.uk 2005-12-09T13:32:29+00:00 re: lms/vle rants/comments
-Does not start with From 
 
 The program scans content.sqlite from 1 up to the first message number not
 already spidered and starts spidering at that message.  It continues spidering
