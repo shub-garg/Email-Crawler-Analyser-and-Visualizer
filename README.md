@@ -45,6 +45,7 @@ Here is a run of gmane.py getting the last five messages of the
 sakai developer list:
 
 Mac: python3 gmane.py 
+
 Win: gmane.py 
 
 The program scans content.sqlite from 1 up to the first message number not
@@ -82,6 +83,7 @@ data cleaning process.
 Running gmodel.py works as follows:
 
 Mac: python3 gmodel.py
+
 Win: gmodel.py
 
 <h5>The gmodel.py program does a number of data cleaing steps</h5>
@@ -129,7 +131,8 @@ analysis.   With this file, data analysis will be really quick.
 The first, simplest data analysis is to do a "who does the most" and "which 
 organzation does the most"?  This is done using gbasic.py:
 
-Mac: python3 gbasic.py 
+Mac: python3 gbasic.py
+
 Win: gbasic.py 
 
 How many to dump? 5
@@ -145,6 +148,7 @@ There is a simple vizualization of the word frequence in the subject lines
 in the file gword.py:
 
 Mac: python3 gword.py
+
 Win: gword.py
 
 Range of counts: 33229 129
@@ -158,6 +162,7 @@ A second visualization is in gline.py.  It visualizes email participation by
 organizations over time.
 
 Mac: python3 gline.py 
+
 Win: gline.py 
 
 Loaded messages= 51330 subjects= 25033 senders= 1584
