@@ -1,6 +1,6 @@
 <h1>Analyzing an EMAIL Archive from gmane and vizualizing the data using the D3 JavaScript library</h1>
 
-<h3> Discription </h3>
+<h3> Discription :</h3>
 
 This is a set of tools that allow you to pull down an archive
 of a gmane repository using the instructions at:
@@ -82,13 +82,13 @@ Each time gmodel.py runs - it completely wipes out and re-builds index.sqlite, a
 you to adjust its parameters and edit the mapping tables in content.sqlite to tweak the 
 data cleaning process.
 
-Running gmodel.py works as follows:
+Running gmodel.py works as follows :
 
     Mac: python3 gmodel.py
 
     Win:python gmodel.py
 
-<h4>The gmodel.py program does a number of data cleaing steps</h4>
+<h4>The gmodel.py program does a number of data cleaing steps :</h4>
 
 Domain names are truncated to two levels for .com, .org, .edu, and .net 
 other domain names are truncated to three levels.  So si.umich.edu becomes
@@ -117,13 +117,6 @@ sgithens@cam.ac.uk -> swgithen@mtu.edu
 And so all the mail messages will be collected under one sender even if 
 they used several email addresses over the lifetime of the mailing list.
 
-You can also make similar entries in the DNSMapping table if there are multiple
-DNS names you want mapped to a single DNS.  In the Sakai data I add the following
-mapping:
-
-iupui.edu -> indiana.edu
-
-So all the folks from the various Indiana University campuses are tracked together.
 
 You can re-run the gmodel.py over and over as you look at the data, and add mappings
 to make the data cleaner and cleaner.   When you are done, you will have a nicely
