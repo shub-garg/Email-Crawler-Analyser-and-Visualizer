@@ -36,6 +36,7 @@ Please install/upgrade the following python packages :
 
     [urllib, re, sqlite3, ssl, time, zlib, string]
 
+<h3> Steps : </h3>
 The first step is to spider the gmane repository.  The base URL 
 is hard-coded in the gmane.py and is hard-coded to the Sakai
 developer list.  You can spider another repository by changing that
@@ -47,7 +48,6 @@ its data in a database and can be interrupted and re-started
 as often as needed.   It may take many hours to pull all the data
 down.  So you may need to restart several times.
 
-<h3> Resources : </h3>
 To give you a head-start, you may dowload 600MB of pre-spidered Sakai 
 email here:
 
@@ -76,12 +76,6 @@ a missing message, go into the SQLite Manager and add a row with the missing id 
 all the other fields blank - and then restart gmane.py.   This will unstick the 
 spidering process and allow it to continue.  These empty messages will be ignored in the next
 phase of the process.
-
-One nice thing is that once you have spidered all of the messages and have them in 
-content.sqlite, you can run gmane.py again to get new messages as they get sent to the
-list.  gmane.py will quickly scan to the end of the already-spidered pages and check 
-if there are new messages and then quickly retrieve those messages and add them 
-to content.sqlite.
 
 The second process is running the program gmodel.py.  gmodel.py reads the rough/raw 
 data from content.sqlite and produces a cleaned-up and well-modeled version of the 
