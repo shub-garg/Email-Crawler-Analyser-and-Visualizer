@@ -33,6 +33,7 @@ http://sqlitebrowser.org/
     pip install --upgrade <packagename>
    
 <h5> Packages required : </h5>
+
 Please install/upgrade the following python packages :
 
     [urllib, re, sqlite3, ssl, time, zlib, string]
