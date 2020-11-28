@@ -6,8 +6,8 @@ of a gmane repository using the instructions at:
 
 http://gmane.org/export.php
 
-In order not to overwhelm the gmane.org server, I have put up 
-my own copy of the messages at: 
+In order not to overwhelm the gmane.org server, I have used 
+a copy of the messages from (Thanks to Dr. Chuck! My course instructor): 
 
 http://mbox.dr-chuck.net/
 
@@ -204,24 +204,4 @@ Output written to gline.js
 
 Its output is written to gline.js which is visualized using gline.htm.
 
-Some URLs for visualization ideas:
-
-https://developers.google.com/chart/
-
-https://developers.google.com/chart/interactive/docs/gallery/motionchart
-
-https://code.google.com/apis/ajax/playground/?type=visualization#motion_chart_time_formats
-
-https://developers.google.com/chart/interactive/docs/gallery/annotatedtimeline
-
-http://bost.ocks.org/mike/uberdata/
-
-http://mbostock.github.io/d3/talk/20111018/calendar.html
-
-http://nltk.org/install.html
-
 As always - comments welcome.
-
--- Dr. Chuck
-Sun Sep 29 00:11:01 EDT 2013
-
