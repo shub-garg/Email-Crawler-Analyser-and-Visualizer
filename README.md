@@ -44,9 +44,11 @@ running gmane.py.
 Here is a run of gmane.py getting the last five messages of the
 sakai developer list:
 
+<font color="green">
 Mac: python3 gmane.py 
 
 Win: gmane.py 
+</font>
 
 The program scans content.sqlite from 1 up to the first message number not
 already spidered and starts spidering at that message.  It continues spidering
