@@ -1,4 +1,4 @@
-<h1>Analyzing an EMAIL Archive from gmane and vizualizing the data using the D3 JavaScript library</h1>
+<h1>Analyzing an EMAIL Archive from gmane and vizualizing the data using the D3 JavaScript library:wave:</h1>
 
 <h3> Discription :</h3>
 
@@ -15,6 +15,7 @@ http://mbox.dr-chuck.net/
 This server will be faster and take a lot of load off the 
 gmane.org server.
 
+<img src="https://images.squarespace-cdn.com/content/v1/5769fc401b631bab1addb2ab/1541580611624-TE64QGKRJG8SWAIUS7NS/ke17ZwdGBToddI8pDm48kPoswlzjSVMM-SxOp7CV59BZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI6FXy8c9PWtBlqAVlUS5izpdcIXDZqDYvprRqZ29Pw0o/coding-freak.gif" width="800" height="500"/>
 <h3>Requirements : </h3>
 
 You should install the SQLite browser to view and modify the databases from:
@@ -37,6 +38,7 @@ Please install/upgrade the following python packages :
     [urllib, re, sqlite3, ssl, time, zlib, string]
 
 <h3> Steps : </h3>
+
 The first step is to spider the gmane repository.  The base URL 
 is hard-coded in the gmane.py and is hard-coded to the Sakai
 developer list.  You can spider another repository by changing that
@@ -141,7 +143,7 @@ You can look at the data in index.sqlite and if you find a problem, you
 can update the Mapping table and DNSMapping table in content.sqlite and
 re-run gmodel.py.
 
-<h3> Visualisation : </h3>
+<h3> Visualisation & Results : </h3>
 
 There is a simple vizualization of the word frequence in the subject lines
 in the file gword.py:
@@ -175,3 +177,4 @@ Its output is written to gline.js which is visualized using gline.htm.
 
 As always - comments welcome.
 <h2>Thank you!!</h2>
+<img src="https://media.tenor.com/images/4a37815ddbf2e92d8f082ca3a0aa02fb/tenor.gif" width="500" height="300"/>
