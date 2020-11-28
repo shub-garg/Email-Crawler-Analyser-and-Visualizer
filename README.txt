@@ -178,6 +178,7 @@ Output written to gword.js
 This produces the file gword.js which you can visualize using the file 
 gword.htm.
 
+![](https://github.com/shub-garg/Email-Crawler-Analyser-and-Visualizer/blob/main/Code/Images/gword.PNG)
 A second visualization is in gline.py.  It visualizes email participation by 
 organizations over time.
 
