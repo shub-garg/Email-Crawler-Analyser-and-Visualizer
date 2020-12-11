@@ -1,4 +1,4 @@
-<h1>Analyzing an EMAIL Archive from gmane and vizualizing the data using the D3 JavaScript library:wave:</h1>
+<h1>Analyzing an EMAIL Archive from gmane and vizualizing the data :wave:</h1>
 
 <h3> Discription :</h3>
 
