@@ -1,4 +1,4 @@
-<h1>Analyzing an EMAIL Archive from gmane and vizualizing the data :wave:</h1>
+<h1>Analyzing an EMAIL Archive from gmane and visualizing the data :wave:</h1>
 
 <h3> Discription :</h3>
 
@@ -147,7 +147,7 @@ re-run gmodel.py.
 
 <h3> Visualisation & Results : </h3>
 
-There is a simple vizualization of the word frequence in the subject lines
+There is a simple visualization of the word frequence in the subject lines
 in the file gword.py:
 
     Mac: python3 gword.py
@@ -169,7 +169,7 @@ organizations over time.
     Win:python gline.py 
 
 Loaded messages= 51330 subjects= 25033 senders= 1584
-Top 10 Oranizations
+Top 10 Organizations
 ['gmail.com', 'umich.edu', 'uct.ac.za', 'indiana.edu', 'unicon.net', 'tfd.co.uk', 'berkeley.edu', 'longsight.com', 'stanford.edu', 'ox.ac.uk']
 Output written to gline.js
 
